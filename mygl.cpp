@@ -1,4 +1,6 @@
 #include "definitions.h"
+#include "mygl.h"
+
 #include <cmath>
 
 #include <GL/gl.h>
