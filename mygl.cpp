@@ -23,7 +23,7 @@ void MyGlDraw(void)
 
     for (int i = 0; i <= IMAGE_WIDTH; i++)
         for (int j = 0; j <= IMAGE_HEIGHT; j++) 
-            if (i % ((int)(IMAGE_WIDTH / 4)) == 0 && j % ((int)(IMAGE_HEIGHT / 4)) == 0) 
+            if ( !(i % (IMAGE_WIDTH / 4) ) && !(j % (IMAGE_HEIGHT / 4)) ) 
                 DrawLine(center, Point(i, j), Rgba(rand() % 255, rand() % 255, rand() % 255, 255 ));
 
 }
